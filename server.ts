@@ -1,5 +1,5 @@
-require('dotenv').config();
-const app = require('./src/app');
+import 'dotenv/config'; // Forma recomendada en TS para reemplazar require('dotenv').config()
+import app from './src/app';
 
 const PORT = process.env.PORT || 5000;
 
